@@ -4738,7 +4738,7 @@ background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
 }
 
 .faq-icon {
-    font-size: 1.8rem;
+   font-size: 1.8rem;
     color: #667eea;
     font-weight: 300;
     transition: transform 0.3s;
@@ -4747,6 +4747,10 @@ background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     text-align: center;
     flex-shrink: 0;
     line-height: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 90px;
 }
 
 .faq-item.active .faq-icon {
@@ -4836,7 +4840,9 @@ background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     .faq-answer {
         padding: 0 20px;
     }
-    
+      .faq-icon{
+        padding-bottom: 5px;
+    }
     .faq-item.active .faq-answer {
         padding: 0 20px 18px;
     }
@@ -4947,7 +4953,54 @@ background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     }
 }
 
+/* Apply animations to hero elements */
+.hero-left {
+    animation: fadeInRight 0.8s ease-out;
+}
+
+.hero-headline {
+    animation: fadeInUp 0.8s ease-out 0.2s both;
+}
+
+.hero-subheadline {
+    animation: fadeInUp 0.8s ease-out 0.4s both;
+}
+
+.hero-bullets {
+    animation: fadeInUp 0.8s ease-out 0.6s both;
+}
+
+.cta-button {
+    animation: fadeInUp 0.8s ease-out 0.8s both;
+    transition: all 0.3s ease;
+}
+
+.hero-subtext {
+    animation: fadeInUp 0.8s ease-out 1s both;
+}
+
+.hero-right {
+    animation: fadeInUp 0.8s ease-out 0.4s both;
+}
+
+.hero-right img {
+    transition: transform 0.3s ease;
+}
+
+.hero-right img:hover {
+    transform: scale(1.02);
+}
+
+/* Smooth button hover */
+.cta-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+}
 
             
             
+ 
+            
+            
+
  
